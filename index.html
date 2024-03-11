@@ -709,12 +709,14 @@ if (reversed == null) { reversed = false; }
 	}
 	this.frame_2632 = function() {
 		this.gotoAndStop('노래듣기');
+		this.play_btn.visible = true;
 	}
 	this.frame_2633 = function() {
 		this.stop();
 	}
 	this.frame_2663 = function() {
 		this.gotoAndStop('전문가창');
+		this.play_btn.visible = true;
 	}
 	this.frame_2664 = function() {
 		var soundInstance = playSound("stos_singtosong",0);
@@ -723,6 +725,7 @@ if (reversed == null) { reversed = false; }
 	}
 	this.frame_7565 = function() {
 		this.gotoAndStop('따라부르');
+		this.play_btn.visible = true;
 	}
 	this.frame_7566 = function() {
 		var soundInstance = playSound("stos_music",0);
@@ -731,16 +734,17 @@ if (reversed == null) { reversed = false; }
 	}
 	this.frame_10200 = function() {
 		this.gotoAndStop('반주듣기');
+		this.play_btn.visible = true;
 	}
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(2632).call(this.frame_2632).wait(1).call(this.frame_2633).wait(30).call(this.frame_2663).wait(1).call(this.frame_2664).wait(4901).call(this.frame_7565).wait(1).call(this.frame_7566).wait(2634).call(this.frame_10200).wait(1));
 	// chapter_no
 	this.instance = new lib.main_no("single",5);
-	this.instance.setTransform(55.7,75.05,1,1,0,0,0,30.4,30.4);
+	this.instance.setTransform(55.55,75.25,1,1,0,0,0,30.4,30.4);
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(10201));
 	// chapter
 	this.instance_1 = new lib.main_title("single",1);
-	this.instance_1.setTransform(203.9,74.15,1,1,0,0,0,98.9,18.2);
+	this.instance_1.setTransform(202.75,74.7,1,1,0,0,0,98.9,18.2);
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(10201));
 	// title
 	this.instance_2 = new lib.title("single",1);
